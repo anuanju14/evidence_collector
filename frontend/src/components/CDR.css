@@ -1,0 +1,77 @@
+/* CDR.css */
+/* Reuse container styles from Databank/Dashboard for consistency */
+.cdr-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+.cdr-content {
+    min-height: 100vh;
+    padding: 120px 40px 40px 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Glass Panel Reuse */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 1200px;
+    /* Wider for spreadsheets */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    margin-bottom: 30px;
+}
+
+.panel-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #4a90e2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Table Styles - Sheet like */
+.table-glass {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+.table-glass th {
+    text-align: left;
+    padding: 12px;
+    color: #555;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    background: rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid #4a90e2;
+}
+
+.table-glass td {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.table-glass tr:hover td {
+    background: rgba(255, 255, 255, 0.8);
+}

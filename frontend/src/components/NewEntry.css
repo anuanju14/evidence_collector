@@ -1,0 +1,113 @@
+/* NewEntry.css */
+
+/* Reuse Container Styles */
+.new-entry-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Main Content Area */
+.new-entry-content {
+    min-height: 100vh;
+    padding: 120px 40px 40px 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Glass Form Card */
+.glass-form-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #4a90e2;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Form Styles */
+.form-label {
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: #4a90e2;
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.1);
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cancel {
+    background: rgba(255, 255, 255, 0.5);
+    color: #666;
+    padding: 15px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-left: 15px;
+}
+
+.btn-cancel:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}

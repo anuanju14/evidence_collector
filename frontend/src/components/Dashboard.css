@@ -1,0 +1,184 @@
+/* Dashboard.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Nunito', sans-serif;
+    background-color: #f4f7f6;
+}
+
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8f9fc;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color: #3b49df;
+    /* Deep blue matching the reference */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.sidebar-header {
+    padding: 35px 25px;
+    margin-bottom: 10px;
+}
+
+.sidebar-header .brand-logo {
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0;
+    color: white;
+    letter-spacing: -0.5px;
+}
+
+.sidebar-header .brand-subtitle {
+    font-size: 11px;
+    opacity: 0.8;
+    margin: 4px 0 0 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* Allow taking up remaining space so logout pushes to bottom */
+}
+
+.sidebar-link {
+    padding: 16px 25px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+    border: none;
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    font-family: inherit;
+}
+
+/* Hover and Active State */
+.sidebar-link:hover {
+    color: white;
+}
+
+.sidebar-link.active {
+    background-color: #2e3bad;
+    /* Slightly darker shade for active tab */
+    color: white;
+    font-weight: 600;
+}
+
+/* Redesigning the arrow pointer like the reference image */
+.sidebar-link.active::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 10px 0 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #2e3bad;
+    z-index: 10;
+}
+
+.sidebar-icon {
+    width: 20px;
+    margin-right: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.logout-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 250px;
+    /* Offset to clear the fixed sidebar */
+    flex: 1;
+    padding: 60px 80px;
+    background-color: #f8f9fc;
+    min-height: 100vh;
+}
+
+.page-title {
+    font-size: 28px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Stats Cards Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 35px 30px;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.stat-title {
+    font-size: 14px;
+    color: #777;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.stat-value {
+    font-size: 40px;
+    font-weight: 700;
+    color: #3b49df;
+    /* Match theme deep blue */
+    margin: 0;
+    line-height: 1;
+}
+
+/* Additional utility cleanups */
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.dashboard-header {
+    display: none !important;
+    /* Hide old navbar if inherited somehow */
+}

@@ -1,0 +1,105 @@
+/* IPDR.css */
+/* Reuse container styles from Databank/Dashboard for consistency */
+.ipdr-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.ipdr-content {
+    min-height: 100vh;
+    padding: 120px 40px 40px 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Glass Panel Reuse */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    margin-bottom: 30px;
+}
+
+.panel-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #4a90e2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Table Styles - Sheet like */
+.table-glass {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+.table-glass th {
+    text-align: left;
+    padding: 15px;
+    color: #888;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    background: transparent;
+    border-bottom: 2px solid #4a90e2;
+}
+
+.table-glass td {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.table-glass tr:hover td {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.search-input-large {
+    width: 350px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0 20px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.search-input-large::placeholder {
+    color: #999;
+}
+
+.dashboard-header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}

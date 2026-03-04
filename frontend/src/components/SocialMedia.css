@@ -1,0 +1,188 @@
+/* SocialMedia.css */
+/* Reuse container styles for consistency */
+.social-media-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+.social-media-content {
+    min-height: 100vh;
+    padding: 120px 40px 40px 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Glass Panel */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 1400px;
+    /* Wider for matrix */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    margin-bottom: 30px;
+}
+
+.panel-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #4a90e2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Table Styles */
+.table-glass {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+.table-glass th {
+    text-align: left;
+    padding: 12px;
+    color: #555;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    background: rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid #4a90e2;
+}
+
+.table-glass td {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.table-glass tr:hover td {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Transposed Matrix Specifics */
+.transposed-table {
+    position: relative;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.transposed-table th,
+.transposed-table td {
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sticky-col {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background: rgba(250, 250, 250, 0.95) !important;
+    border-right: 2px solid #4a90e2;
+    font-weight: 800;
+}
+
+.platform-label {
+    font-weight: 700;
+    color: #4a90e2;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.platform-link {
+    display: block;
+    color: #4a90e2;
+    font-weight: 600;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.empty-cell {
+    color: #ccc;
+    font-style: italic;
+}
+
+.name-header {
+    background: rgba(74, 144, 226, 0.1) !important;
+    color: #333;
+    font-weight: 800;
+}
+
+.btn-delete-user {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 18px;
+    padding: 0 5px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.btn-delete-user:hover {
+    color: #c0392b;
+    transform: scale(1.2);
+}
+
+.bg-white-50 {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.form-label {
+    margin-bottom: 3px;
+    color: #666;
+}
+
+/* Others Row Styles */
+.others-row {
+    background: rgba(74, 144, 226, 0.05) !important;
+}
+
+.platform-input {
+    border: none;
+    background: transparent;
+    font-weight: 800;
+    color: #4a90e2;
+    text-transform: uppercase;
+    padding: 2px 5px;
+    border-bottom: 1px dashed #4a90e2;
+    width: 100%;
+    font-size: 11px;
+}
+
+.platform-input:focus {
+    background: white;
+    border-bottom: 1px solid #4a90e2;
+    box-shadow: none;
+    outline: none;
+}
+
+.save-others-container {
+    padding-left: 10px;
+}
+
+.btn-xs {
+    padding: 2px 8px;
+    font-size: 10px;
+    border-radius: 4px;
+}

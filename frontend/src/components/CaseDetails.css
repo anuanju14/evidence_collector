@@ -1,0 +1,167 @@
+/* CaseDetails.css */
+
+/* Main Container */
+.case-details-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    /* Matched to Case Manager */
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content Wrapper */
+.case-details-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto 40px auto;
+    /* Increased top margin for fixed header */
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Card Styles - Glassmorphism */
+.details-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+    overflow: hidden;
+}
+
+/* Card Header - Standard */
+.details-card-header {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.case-title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Card Header - Green (for Add Evidence Log) */
+.card-header-green {
+    background-color: rgba(25, 135, 84, 0.85);
+    /* Success green with transparency */
+    padding: 15px 20px;
+    color: white;
+}
+
+/* Table Styles - Custom Overrides */
+.table-details {
+    background-color: transparent !important;
+}
+
+.table-details th {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    width: 30%;
+    font-weight: 600;
+    color: #495057;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.table-details td {
+    background-color: transparent !important;
+    color: #212529;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* History table transparency */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.table th,
+.table td {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Images */
+.img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Bootstrap Overrides/Helpers if needed */
+.btn {
+    border-radius: 4px;
+    /* Slightly sharper buttons */
+}
+
+/* Modal Overlay Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content-custom {
+    background: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    animation: slideIn 0.3s ease-out;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .case-details-container {
+        background: white;
+        min-height: auto;
+    }
+
+    .details-card {
+        border: 1px solid #ddd;
+        box-shadow: none;
+        margin-bottom: 20px;
+        page-break-inside: avoid;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+}

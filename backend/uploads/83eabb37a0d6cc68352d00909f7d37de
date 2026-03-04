@@ -1,0 +1,61 @@
+timestamp,index,sourcetype,EventCode,EventDescription,Account_Name,Source_Address,Share_Name,Share_Path,File_Name,Access_Type,Access_Result,ComputerName
+2026-01-07 05:42:37,windows,WinEventLog:Security,5140,Network share accessed,svc_backup,192.168.1.50,\\FILESRV01\HR,\\FILESRV01\Finance,,Modify,Success,FILESRV01
+2026-01-07 05:43:37,windows,WinEventLog:Security,5143,Network share modified,svc_backup,192.168.1.50,\\FILESRV01\Public,\\FILESRV01\HR,,Modify,Success,FILESRV01
+2026-01-07 05:44:37,windows,WinEventLog:Security,5143,Network share modified,administrator,192.168.1.50,\\FILESRV01\Finance,\\FILESRV01\Public,,Modify,Failure,FILESRV01
+2026-01-07 05:45:37,windows,WinEventLog:Security,5143,Network share modified,jdoe,10.0.0.30,\\FILESRV01\HR,\\FILESRV01\Finance,,Modify,Success,FILESRV01
+2026-01-07 05:46:37,windows,WinEventLog:Security,5143,Network share modified,svc_backup,10.0.0.25,\\FILESRV01\Finance,\\FILESRV01\Public,,Read,Success,FILESRV01
+2026-01-07 05:47:37,windows,WinEventLog:Security,5142,Network share created,jdoe,10.0.0.25,\\FILESRV01\HR,\\FILESRV01\Public,,Modify,Success,FILESRV01
+2026-01-07 05:48:37,windows,WinEventLog:Security,5140,Network share accessed,administrator,10.0.0.25,\\FILESRV01\HR,\\FILESRV01\Finance,,Read,Success,FILESRV01
+2026-01-07 05:49:37,windows,WinEventLog:Security,5145,Detailed file share access,svc_backup,10.0.0.30,\\FILESRV01\Finance,\\FILESRV01\HR,budget.pdf,Read,Failure,FILESRV01
+2026-01-07 05:50:37,windows,WinEventLog:Security,5143,Network share modified,asmith,192.168.1.50,\\FILESRV01\HR,\\FILESRV01\HR,,Delete,Failure,FILESRV01
+2026-01-07 05:51:37,windows,WinEventLog:Security,5145,Detailed file share access,jdoe,10.0.0.30,\\FILESRV01\Finance,\\FILESRV01\Public,employees.docx,Modify,Success,FILESRV01
+2026-01-07 05:52:37,windows,WinEventLog:Security,5140,Network share accessed,svc_backup,10.0.0.30,\\FILESRV01\Public,\\FILESRV01\Public,,Read,Success,FILESRV01
+2026-01-07 05:53:37,windows,WinEventLog:Security,5140,Network share accessed,svc_backup,192.168.1.50,\\FILESRV01\HR,\\FILESRV01\HR,,Delete,Failure,FILESRV01
+2026-01-07 05:54:37,windows,WinEventLog:Security,5142,Network share created,svc_backup,10.0.0.30,\\FILESRV01\Finance,\\FILESRV01\Public,,Modify,Success,FILESRV01
+2026-01-07 05:55:37,windows,WinEventLog:Security,5144,Network share deleted,administrator,192.168.1.50,\\FILESRV01\HR,\\FILESRV01\Finance,,Delete,Failure,FILESRV01
+2026-01-07 05:56:37,windows,WinEventLog:Security,5145,Detailed file share access,svc_backup,192.168.1.50,\\FILESRV01\HR,\\FILESRV01\Public,employees.docx,Delete,Success,FILESRV01
+2026-01-07 05:57:37,windows,WinEventLog:Security,5143,Network share modified,asmith,10.0.0.25,\\FILESRV01\HR,\\FILESRV01\Public,,Write,Failure,FILESRV01
+2026-01-07 05:58:37,windows,WinEventLog:Security,5143,Network share modified,jdoe,10.0.0.25,\\FILESRV01\Public,\\FILESRV01\Public,,Write,Failure,FILESRV01
+2026-01-07 05:59:37,windows,WinEventLog:Security,5145,Detailed file share access,jdoe,192.168.1.50,\\FILESRV01\Finance,\\FILESRV01\Finance,employees.docx,Write,Success,FILESRV01
+2026-01-07 06:00:37,windows,WinEventLog:Security,5143,Network share modified,jdoe,10.0.0.25,\\FILESRV01\Finance,\\FILESRV01\HR,,Delete,Success,FILESRV01
+2026-01-07 06:01:37,windows,WinEventLog:Security,5140,Network share accessed,asmith,10.0.0.30,\\FILESRV01\HR,\\FILESRV01\HR,,Modify,Success,FILESRV01
+2026-01-07 06:02:37,windows,WinEventLog:Security,5142,Network share created,svc_backup,10.0.0.30,\\FILESRV01\Finance,\\FILESRV01\Finance,,Write,Success,FILESRV01
+2026-01-07 06:03:37,windows,WinEventLog:Security,5142,Network share created,jdoe,10.0.0.25,\\FILESRV01\Public,\\FILESRV01\HR,,Modify,Success,FILESRV01
+2026-01-07 06:04:37,windows,WinEventLog:Security,5144,Network share deleted,jdoe,10.0.0.25,\\FILESRV01\Public,\\FILESRV01\HR,,Write,Failure,FILESRV01
+2026-01-07 06:05:37,windows,WinEventLog:Security,5140,Network share accessed,jdoe,10.0.0.25,\\FILESRV01\Public,\\FILESRV01\HR,,Write,Success,FILESRV01
+2026-01-07 06:06:37,windows,WinEventLog:Security,5140,Network share accessed,jdoe,192.168.1.50,\\FILESRV01\Public,\\FILESRV01\Finance,,Read,Success,FILESRV01
+2026-01-07 06:07:37,windows,WinEventLog:Security,5142,Network share created,jdoe,10.0.0.30,\\FILESRV01\Public,\\FILESRV01\Finance,,Write,Failure,FILESRV01
+2026-01-07 06:08:37,windows,WinEventLog:Security,5143,Network share modified,svc_backup,10.0.0.25,\\FILESRV01\Public,\\FILESRV01\Finance,,Modify,Failure,FILESRV01
+2026-01-07 06:09:37,windows,WinEventLog:Security,5144,Network share deleted,asmith,10.0.0.25,\\FILESRV01\HR,\\FILESRV01\Finance,,Read,Failure,FILESRV01
+2026-01-07 06:10:37,windows,WinEventLog:Security,5142,Network share created,asmith,10.0.0.30,\\FILESRV01\HR,\\FILESRV01\Public,,Read,Success,FILESRV01
+2026-01-07 06:11:37,windows,WinEventLog:Security,5142,Network share created,asmith,10.0.0.30,\\FILESRV01\Finance,\\FILESRV01\HR,,Write,Success,FILESRV01
+2026-01-07 06:12:37,windows,WinEventLog:Security,5145,Detailed file share access,svc_backup,192.168.1.50,\\FILESRV01\Public,\\FILESRV01\Finance,employees.docx,Write,Success,FILESRV01
+2026-01-07 06:13:37,windows,WinEventLog:Security,5142,Network share created,asmith,10.0.0.30,\\FILESRV01\Finance,\\FILESRV01\HR,,Read,Failure,FILESRV01
+2026-01-07 06:14:37,windows,WinEventLog:Security,5144,Network share deleted,administrator,10.0.0.30,\\FILESRV01\Finance,\\FILESRV01\Finance,,Write,Success,FILESRV01
+2026-01-07 06:15:37,windows,WinEventLog:Security,5145,Detailed file share access,asmith,10.0.0.30,\\FILESRV01\Finance,\\FILESRV01\Finance,employees.docx,Modify,Failure,FILESRV01
+2026-01-07 06:16:37,windows,WinEventLog:Security,5145,Detailed file share access,jdoe,10.0.0.25,\\FILESRV01\Public,\\FILESRV01\HR,employees.docx,Modify,Failure,FILESRV01
+2026-01-07 06:17:37,windows,WinEventLog:Security,5142,Network share created,jdoe,10.0.0.30,\\FILESRV01\HR,\\FILESRV01\HR,,Write,Failure,FILESRV01
+2026-01-07 06:18:37,windows,WinEventLog:Security,5142,Network share created,jdoe,10.0.0.30,\\FILESRV01\HR,\\FILESRV01\Finance,,Delete,Failure,FILESRV01
+2026-01-07 06:19:37,windows,WinEventLog:Security,5143,Network share modified,jdoe,10.0.0.30,\\FILESRV01\Finance,\\FILESRV01\Public,,Delete,Failure,FILESRV01
+2026-01-07 06:20:37,windows,WinEventLog:Security,5143,Network share modified,administrator,10.0.0.25,\\FILESRV01\Public,\\FILESRV01\Finance,,Delete,Failure,FILESRV01
+2026-01-07 06:21:37,windows,WinEventLog:Security,5143,Network share modified,administrator,192.168.1.50,\\FILESRV01\Public,\\FILESRV01\HR,,Write,Success,FILESRV01
+2026-01-07 06:22:37,windows,WinEventLog:Security,5145,Detailed file share access,svc_backup,10.0.0.30,\\FILESRV01\Public,\\FILESRV01\Public,budget.pdf,Modify,Failure,FILESRV01
+2026-01-07 06:23:37,windows,WinEventLog:Security,5143,Network share modified,svc_backup,192.168.1.50,\\FILESRV01\Public,\\FILESRV01\HR,,Modify,Failure,FILESRV01
+2026-01-07 06:24:37,windows,WinEventLog:Security,5140,Network share accessed,svc_backup,10.0.0.30,\\FILESRV01\Public,\\FILESRV01\Public,,Modify,Failure,FILESRV01
+2026-01-07 06:25:37,windows,WinEventLog:Security,5145,Detailed file share access,asmith,192.168.1.50,\\FILESRV01\Finance,\\FILESRV01\Finance,payroll.xlsx,Write,Failure,FILESRV01
+2026-01-07 06:26:37,windows,WinEventLog:Security,5140,Network share accessed,svc_backup,10.0.0.25,\\FILESRV01\HR,\\FILESRV01\Finance,,Write,Failure,FILESRV01
+2026-01-07 06:27:37,windows,WinEventLog:Security,5143,Network share modified,asmith,10.0.0.30,\\FILESRV01\Finance,\\FILESRV01\Finance,,Read,Success,FILESRV01
+2026-01-07 06:28:37,windows,WinEventLog:Security,5145,Detailed file share access,svc_backup,192.168.1.50,\\FILESRV01\Finance,\\FILESRV01\Public,notes.txt,Read,Failure,FILESRV01
+2026-01-07 06:29:37,windows,WinEventLog:Security,5145,Detailed file share access,svc_backup,10.0.0.30,\\FILESRV01\HR,\\FILESRV01\Finance,payroll.xlsx,Write,Success,FILESRV01
+2026-01-07 06:30:37,windows,WinEventLog:Security,5140,Network share accessed,administrator,192.168.1.50,\\FILESRV01\HR,\\FILESRV01\Public,,Write,Success,FILESRV01
+2026-01-07 06:31:37,windows,WinEventLog:Security,5140,Network share accessed,jdoe,192.168.1.50,\\FILESRV01\Finance,\\FILESRV01\Public,,Write,Failure,FILESRV01
+2026-01-07 06:32:37,windows,WinEventLog:Security,5140,Network share accessed,administrator,10.0.0.25,\\FILESRV01\Public,\\FILESRV01\HR,,Write,Success,FILESRV01
+2026-01-07 06:33:37,windows,WinEventLog:Security,5145,Detailed file share access,asmith,192.168.1.50,\\FILESRV01\HR,\\FILESRV01\Finance,payroll.xlsx,Read,Success,FILESRV01
+2026-01-07 06:34:37,windows,WinEventLog:Security,5140,Network share accessed,administrator,10.0.0.25,\\FILESRV01\Finance,\\FILESRV01\Finance,,Read,Failure,FILESRV01
+2026-01-07 06:35:37,windows,WinEventLog:Security,5142,Network share created,jdoe,192.168.1.50,\\FILESRV01\Public,\\FILESRV01\HR,,Modify,Failure,FILESRV01
+2026-01-07 06:36:37,windows,WinEventLog:Security,5145,Detailed file share access,jdoe,10.0.0.30,\\FILESRV01\HR,\\FILESRV01\HR,notes.txt,Modify,Success,FILESRV01
+2026-01-07 06:37:37,windows,WinEventLog:Security,5145,Detailed file share access,jdoe,192.168.1.50,\\FILESRV01\Finance,\\FILESRV01\Public,notes.txt,Delete,Failure,FILESRV01
+2026-01-07 06:38:37,windows,WinEventLog:Security,5144,Network share deleted,administrator,10.0.0.25,\\FILESRV01\Public,\\FILESRV01\HR,,Delete,Failure,FILESRV01
+2026-01-07 06:39:37,windows,WinEventLog:Security,5143,Network share modified,svc_backup,10.0.0.25,\\FILESRV01\HR,\\FILESRV01\HR,,Modify,Success,FILESRV01
+2026-01-07 06:40:37,windows,WinEventLog:Security,5145,Detailed file share access,jdoe,10.0.0.30,\\FILESRV01\Public,\\FILESRV01\Public,payroll.xlsx,Modify,Success,FILESRV01
+2026-01-07 06:41:37,windows,WinEventLog:Security,5142,Network share created,jdoe,192.168.1.50,\\FILESRV01\Public,\\FILESRV01\Public,,Modify,Success,FILESRV01

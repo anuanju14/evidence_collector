@@ -1,0 +1,99 @@
+/* Sidebar.css */
+.global-sidebar {
+    width: 250px;
+    background-color: #3b49df;
+    /* Deep blue matching the reference */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.sidebar-header {
+    padding: 35px 25px;
+    margin-bottom: 10px;
+}
+
+.sidebar-header .brand-logo {
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0;
+    color: white;
+    letter-spacing: -0.5px;
+}
+
+.sidebar-header .brand-subtitle {
+    font-size: 11px;
+    opacity: 0.8;
+    margin: 4px 0 0 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.sidebar-link {
+    padding: 16px 25px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+    border: none;
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    font-family: inherit;
+}
+
+.sidebar-link:hover {
+    color: white;
+}
+
+.sidebar-link.active {
+    background-color: #2e3bad;
+    color: white;
+    font-weight: 600;
+}
+
+.sidebar-link.active::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 10px 0 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #2e3bad;
+    z-index: 10;
+}
+
+.sidebar-icon {
+    width: 20px;
+    margin-right: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.logout-btn {
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logout-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}

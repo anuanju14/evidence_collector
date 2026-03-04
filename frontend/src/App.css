@@ -1,0 +1,119 @@
+.App {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* --- Global Dashboard Header Styles (Moved from Dashboard.css) --- */
+
+/* Header / Top Navigation Bar */
+.dashboard-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+
+  /* Glassmorphism - Increased opacity to prevent overlap */
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+}
+
+.brand-logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #4a90e2;
+  text-transform: uppercase;
+}
+
+/* Horizontal Navigation Links */
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* Horizontal alignment */
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-item {
+  margin-bottom: 0;
+  /* Remove vertical spacing */
+}
+
+.nav-link {
+  color: #e0e0e0;
+  /* Very light grey as seen in screenshot */
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #4a90e2;
+  background: #f0f7ff;
+  /* Light blue pill background as seen in first image */
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.1);
+}
+
+/* Logout button specific styling if needed */
+/* Logout button specific styling */
+.logout-btn {
+  background: none;
+  border: 1px solid #4a90e2 !important;
+  color: #4a90e2 !important;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 4px 20px !important;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+.logout-btn:hover {
+  background: #4a90e2;
+  color: white !important;
+}
+
+@media print {
+
+  .dashboard-header,
+  .no-print {
+    display: none !important;
+  }
+}
