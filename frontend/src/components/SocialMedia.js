@@ -310,7 +310,7 @@ const SocialMedia = () => {
                                                 </td>
                                                 <td>
                                                     <button
-                                                        className="btn btn-sm btn-outline-danger py-0 px-2"
+                                                        className="btn btn-sm btn-outline-primary py-0 px-2"
                                                         onClick={() => handleDeletePlatform(p)}
                                                         title={`Delete all for ${p}`}
                                                     >

@@ -3,9 +3,8 @@
 /* Main Container */
 .case-details-container {
     min-height: 100vh;
-    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
-    /* Matched to Case Manager */
-    font-family: 'Nunito', sans-serif;
+    background: transparent;
+    font-family: 'Inter', 'Nunito', sans-serif;
     padding-bottom: 40px;
     display: flex;
     flex-direction: column;
@@ -23,22 +22,20 @@
     gap: 30px;
 }
 
-/* Card Styles - Glassmorphism */
+/* Card Styles - Clean White */
 .details-card {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 12px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+    background: white;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     overflow: hidden;
 }
 
 /* Card Header - Standard */
 .details-card-header {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: white;
     padding: 15px 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid #eaeaea;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,32 +64,32 @@
 }
 
 .table-details th {
-    background-color: rgba(255, 255, 255, 0.1) !important;
+    background-color: #f8f9fc !important;
     width: 30%;
     font-weight: 600;
     color: #495057;
-    border-color: rgba(255, 255, 255, 0.3) !important;
+    border-color: #eaeaea !important;
 }
 
 .table-details td {
     background-color: transparent !important;
     color: #212529;
-    border-color: rgba(255, 255, 255, 0.3) !important;
+    border-color: #eaeaea !important;
 }
 
 /* History table transparency */
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(255, 255, 255, 0.05) !important;
+    background-color: #f8f9fc !important;
 }
 
 .table-hover tbody tr:hover {
-    background-color: rgba(255, 255, 255, 0.2) !important;
+    background-color: #f1f3f5 !important;
 }
 
 .table th,
 .table td {
     background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: #eaeaea;
 }
 
 /* Responsive Images */

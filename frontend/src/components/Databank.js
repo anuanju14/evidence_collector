@@ -116,7 +116,7 @@ const Databank = () => {
                                     </thead>
                                     <tbody>
                                         {filteredCases.map(c => (
-                                            <tr key={c._id}>
+                                            <tr key={c._id} onClick={() => navigate(`/cases/${c._id}`)} style={{ cursor: 'pointer' }}>
                                                 <td>{c.caseNumber}</td>
                                                 <td>{c.firNumber}</td>
                                                 <td>{c.caseName}</td>

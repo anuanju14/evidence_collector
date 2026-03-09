@@ -260,9 +260,9 @@ const CaseDetails = () => {
 
                         <div className="no-print action-buttons">
                             <button onClick={handleDownloadPDF} className="btn btn-primary me-2">Download PDF</button>
-                            <button onClick={() => setShowAddDataForm(!showAddDataForm)} className="btn btn-success me-2">{showAddDataForm ? 'Hide Form' : 'Add Data'}</button>
-                            <button onClick={handleDelete} className="btn btn-danger me-2">Delete</button>
-                            <Link to="/cases" className="btn btn-secondary">Back to List</Link>
+                            <button onClick={() => setShowAddDataForm(!showAddDataForm)} className="btn btn-primary me-2">{showAddDataForm ? 'Hide Form' : 'Add Data'}</button>
+                            <button onClick={handleDelete} className="btn btn-primary me-2">Delete</button>
+                            <Link to="/cases" className="btn btn-primary">Back to List</Link>
                         </div>
                     </div>
 
@@ -400,7 +400,7 @@ const CaseDetails = () => {
                                                         )}
                                                         <button
                                                             onClick={() => handleDeleteLog(log._id)}
-                                                            className="btn btn-sm btn-danger"
+                                                            className="btn btn-sm btn-primary"
                                                             title="Delete Log"
                                                         >
                                                             Delete

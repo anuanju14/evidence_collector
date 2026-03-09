@@ -89,7 +89,7 @@ const CaseManager = () => {
                     <table className="table-custom">
                         <thead>
                             <tr>
-                                <th>FIR No.</th>
+                                <th>FIR Number</th>
                                 <th>Station</th>
                                 <th>Date</th>
                                 <th>Actions</th>
@@ -98,22 +98,18 @@ const CaseManager = () => {
                         <tbody>
                             {filteredCases.map(c => (
                                 <tr key={c._id} onClick={() => navigate(`/cases/${c._id}`)} style={{ cursor: 'pointer' }}>
-                                    <td>{c.firNumber}</td>
+                                    <td>{c.firNumber || 'N/A'}</td>
                                     <td>{c.policeStation}</td>
                                     <td>{c.date ? new Date(c.date).toLocaleDateString() : 'N/A'}</td>
                                     <td className="actions-cell">
                                         <div className="d-flex align-items-center">
                                             <button
-                                                className="btn btn-sm btn-danger me-2"
+                                                className="btn btn-sm btn-primary me-2"
                                                 onClick={(e) => handleDelete(e, c._id)}
                                             >
                                                 Delete
                                             </button>
-                                            {c.caseFile && (
-                                                <a href={c.caseFile} download={`case-file-${c.firNumber}`} onClick={(e) => e.stopPropagation()} className="btn-download">
-                                                    File
-                                                </a>
-                                            )}
+
                                         </div>
                                     </td>
                                 </tr>

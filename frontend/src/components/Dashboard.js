@@ -38,7 +38,7 @@ const Dashboard = () => {
         <div className="dashboard-layout">
             {/* Main Content Area */}
             <main className="main-content">
-                <h1 className="page-title">Dashboard Overview</h1>
+
 
                 {/* Stats Grid */}
                 <div className="stats-grid">
@@ -54,12 +54,12 @@ const Dashboard = () => {
                         <div className="stat-title">Social Media</div>
                         <div className="stat-value">0</div>
                     </Link>
-                    <Link to="/cdr" className="stat-card" style={{ textDecoration: 'none' }}>
-                        <div className="stat-title">CDR</div>
-                        <div className="stat-value">0</div>
-                    </Link>
                     <Link to="/ipdr" className="stat-card" style={{ textDecoration: 'none' }}>
                         <div className="stat-title">IPDR</div>
+                        <div className="stat-value">0</div>
+                    </Link>
+                    <Link to="/cdr" className="stat-card" style={{ textDecoration: 'none' }}>
+                        <div className="stat-title">CDR</div>
                         <div className="stat-value">0</div>
                     </Link>
                 </div>

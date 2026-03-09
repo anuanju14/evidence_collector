@@ -90,25 +90,6 @@
   box-shadow: 0 4px 15px rgba(74, 144, 226, 0.1);
 }
 
-/* Logout button specific styling if needed */
-/* Logout button specific styling */
-.logout-btn {
-  background: none;
-  border: 1px solid #4a90e2 !important;
-  color: #4a90e2 !important;
-  cursor: pointer;
-  border-radius: 20px;
-  padding: 4px 20px !important;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: normal;
-}
-
-.logout-btn:hover {
-  background: #4a90e2;
-  color: white !important;
-}
 
 @media print {
 

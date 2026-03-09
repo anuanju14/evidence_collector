@@ -37,9 +37,6 @@ const Sidebar = () => {
                 <Link to="/databank" className={`sidebar-link ${isActive('/databank')}`}>
                     <FontAwesomeIcon icon={faDatabase} className="sidebar-icon" /> Databank
                 </Link>
-                <Link to="/analyze" className={`sidebar-link ${isActive('/analyze')}`}>
-                    <FontAwesomeIcon icon={faChartPie} className="sidebar-icon" /> Analyze
-                </Link>
 
                 <button onClick={handleLogout} className="sidebar-link logout-btn">
                     <FontAwesomeIcon icon={faSignOutAlt} className="sidebar-icon" /> Logout

@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faLock } from '@fortawesome/free-solid-svg-icons';
-import logo from '../assets/kerala_police_logo.png';
+import loginImage from '../assets/log11.jpg';
 import './Login.css';
 
 const Login = () => {
@@ -26,46 +26,49 @@ const Login = () => {
     };
 
     return (
-        <div className="login-container">
-            <div className="login-card">
-                <div className="logo-container">
-                    <img src={logo} alt="Kerala Police Logo" className="login-logo" />
+        <div className="login-container" style={{ backgroundImage: `url(${loginImage})` }}>
+
+            <div className="login-form-side">
+                <div className="login-form-wrapper">
+                    <div className="login-header">
+                        <h2>Welcome Back</h2>
+                        <p>Sign in to Evidence Collector</p>
+                    </div>
+
+                    {error && <div className="alert-custom">{error}</div>}
+
+                    <form onSubmit={handleLogin}>
+                        <div className="form-group">
+                            <FontAwesomeIcon icon={faUser} className="form-control-icon" />
+                            <input
+                                type="text"
+                                className="form-control-custom"
+                                placeholder="Username"
+                                value={username}
+                                onChange={(e) => setUsername(e.target.value)}
+                                required
+                            />
+                        </div>
+
+                        <div className="form-group">
+                            <FontAwesomeIcon icon={faLock} className="form-control-icon" />
+                            <input
+                                type="password"
+                                className="form-control-custom"
+                                placeholder="Password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                required
+                            />
+                        </div>
+
+                        <button type="submit" className="btn-login">
+                            LOGIN
+                        </button>
+                    </form>
                 </div>
-
-                <br /><br /> {/* Spacer for avatar overlap */}
-
-                {error && <div className="alert-custom">{error}</div>}
-
-                <form onSubmit={handleLogin}>
-                    <div className="form-group">
-                        <FontAwesomeIcon icon={faUser} className="form-control-icon" />
-                        <input
-                            type="text"
-                            className="form-control-custom"
-                            placeholder="Username"
-                            value={username}
-                            onChange={(e) => setUsername(e.target.value)}
-                            required
-                        />
-                    </div>
-
-                    <div className="form-group">
-                        <FontAwesomeIcon icon={faLock} className="form-control-icon" />
-                        <input
-                            type="password"
-                            className="form-control-custom"
-                            placeholder="Password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            required
-                        />
-                    </div>
-
-                    <button type="submit" className="btn-login">
-                        LOGIN
-                    </button>
-                </form>
             </div>
+
         </div>
     );
 };

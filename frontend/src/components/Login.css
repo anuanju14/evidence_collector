@@ -6,68 +6,55 @@
     width: 100%;
     height: 100%;
     z-index: 1000;
-    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
-    /* Light Blue Gradient */
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: 'Nunito', sans-serif;
 }
 
-/* Override global body/App styles */
-.login-page-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.login-card {
-    /* Crystal/Glassmorphism Effect */
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-
-    padding: 60px 40px 50px;
-    /* Increased top padding */
-    position: relative;
-    color: #333333;
-    /* Dark text for contrast */
+/* Login Form Container */
+.login-form-side {
     width: 100%;
-    max-width: 500px;
-    margin: 20px;
-    /* Add margin for small screens */
-}
-
-/* Logo container */
-.logo-container {
-    position: absolute;
-    top: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 120px;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border: 2px solid #4a90e2;
-    border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
-    z-index: 10;
-    overflow: hidden;
-    padding: 5px;
+    justify-content: flex-start;
+    background: transparent;
+    padding: 40px 10%;
+    /* Responsive padding to offset from the left edge */
 }
 
-.login-logo {
+.login-form-wrapper {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
+
+.login-header {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.login-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a237e;
+    margin: 0 0 10px 0;
+}
+
+.login-header p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+
 
 .form-group {
     position: relative;
@@ -88,27 +75,23 @@
 }
 
 /* High specificity to override index.css and bootstrap */
-.login-card input.form-control-custom {
+.login-form-wrapper input.form-control-custom {
     width: 100%;
     padding: 15px 15px 15px 50px !important;
-    /* Left padding for icon - Force override */
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 30px;
-    /* Rounder inputs for crystal look */
-    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f8f9fa;
     color: #333;
-    font-size: 18px !important;
-    /* Increased font size */
-    /* Override index.css 22px */
+    font-size: 16px !important;
     height: auto !important;
     box-sizing: border-box;
     transition: all 0.3s ease;
 }
 
-.login-card input.form-control-custom:focus {
+.login-form-wrapper input.form-control-custom:focus {
     outline: none;
-    box-shadow: 0 0 10px rgba(74, 144, 226, 0.3);
-    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+    background-color: #ffffff;
     border-color: #4a90e2;
 }
 

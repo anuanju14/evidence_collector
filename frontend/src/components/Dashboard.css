@@ -131,14 +131,14 @@ body {
 /* Stats Cards Grid */
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
 }
 
 .stat-card {
     background: white;
-    padding: 35px 30px;
-    border-radius: 6px;
+    padding: 50px 40px;
+    border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     border: 1px solid #eaeaea;
     display: flex;
@@ -155,15 +155,15 @@ body {
 }
 
 .stat-title {
-    font-size: 14px;
+    font-size: 18px;
     color: #777;
-    font-weight: 500;
-    margin-bottom: 12px;
+    font-weight: 600;
+    margin-bottom: 18px;
 }
 
 .stat-value {
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 52px;
+    font-weight: 800;
     color: #3b49df;
     /* Match theme deep blue */
     margin: 0;
